@@ -16,9 +16,11 @@ use PHPUnit\Framework\TestCase;
 
 class CreateInvoiceHandlerTest extends TestCase
 {
-    private UserRepositoryInterface|MockObject $userRepository;
+    /** @var UserRepositoryInterface&MockObject */
+    private UserRepositoryInterface $userRepository;
 
-    private InvoiceRepositoryInterface|MockObject $invoiceRepository;
+    /** @var InvoiceRepositoryInterface&MockObject */
+    private InvoiceRepositoryInterface $invoiceRepository;
 
     private CreateInvoiceHandler $handler;
 
